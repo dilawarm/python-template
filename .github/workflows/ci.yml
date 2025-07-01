@@ -9,6 +9,9 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write
     strategy:
       matrix:
         python-version: ["3.12"]
@@ -60,6 +63,9 @@ jobs:
   docker-security-scan:
     runs-on: ubuntu-latest
     needs: test
+    permissions:
+      contents: read
+      security-events: write
     
     steps:
     - name: Checkout code
