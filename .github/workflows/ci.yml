@@ -44,7 +44,7 @@ jobs:
         docker run --rm -v ${{ github.workspace }}/.out:/python_template/.out python-template:ci uv run make coverage
 
     - name: Upload coverage reports
-      uses: codecov/codecov-action@v3
+      uses: codecov/codecov-action@v5
       if: always()
       with:
         file: ./.out/coverage.xml
