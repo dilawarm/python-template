@@ -11,7 +11,7 @@ ENV PATH="/root/.local/bin:${PATH}"
 ENV PATH="/root/.cargo/bin:${PATH}"
 
 RUN apt-get update -yq
-RUN env DEBIAN_FRONTEND=noninteractive apt-get install -q -o=Dpkg::Use-Pty=0 -y --no-install-recommends pkg-config libicu-dev curl
+RUN env DEBIAN_FRONTEND=noninteractive apt-get install -q -o=Dpkg::Use-Pty=0 -y --no-install-recommends pkg-config libicu-dev curl git make
 RUN curl -LsSf https://astral.sh/uv/install.sh | sh
 RUN pip install setuptools_scm
 RUN uv run make install
