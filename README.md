@@ -15,7 +15,7 @@ A basic Python project template that actually works. Nothing fancy, just the stu
 
 ## What's in here
 
-This template gives you a Python 3.12 project with:
+This template gives you a Python 3.13 project with:
 
 - **uv** for dependency management (it's fast)
 - **pytest** for testing
