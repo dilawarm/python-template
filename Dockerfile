@@ -1,10 +1,10 @@
-FROM python:3.13-slim
+FROM python:3.13.7-slim
 
 WORKDIR "/python_template"
 COPY . /python_template
 
 ENV UV_PYTHON_PREFERENCE=managed
-ENV UV_PYTHON=3.13
+ENV UV_PYTHON=3.13.7
 ENV UV_NO_PROGRESS=true
 
 ENV PATH="/root/.local/bin:${PATH}"

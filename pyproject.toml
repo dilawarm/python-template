@@ -23,7 +23,7 @@ name = "python-template"
 dynamic = ["version"]
 description = "Project description"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.13.7"
 dependencies = []
 
 [tool.uv]
@@ -45,5 +45,5 @@ reinstall-package = ["ruff"]
 required-version = ">=0.7.2"
 
 [tool.uv.pip]
-python-version = "3.13"
+python-version = "3.13.7"
 reinstall-package = ["ruff"]
