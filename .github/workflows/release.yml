@@ -80,7 +80,7 @@ jobs:
         "
 
     - name: Upload release artifacts
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v6
       with:
         name: release-artifacts-${{ steps.changelog.outputs.tag_name }}
         path: dist/
